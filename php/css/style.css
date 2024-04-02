@@ -1,0 +1,332 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    color: #000;
+    font-family: var(--mr-roboto-family)
+}
+
+
+
+.paddnig80 {
+    padding: 80px 0px;
+}
+
+.main-banner {
+    background-image: url(../images/banner-img.png);
+        padding: 100px 0px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+
+
+.nav-banner {
+    background-color: var(--black-color);
+}
+
+.navs ul {
+     text-align: center
+}
+
+.navs ul li {
+    display: inline-block;
+}
+
+.navs ul li a {
+    color: var(--white-color);
+    padding: 25px;
+    font-size: var(--font-size-18);
+    position: relative;
+        display: block;
+}
+
+.navs ul li a:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    height: 25%;
+    width: 2px;
+}
+
+.navs ul li:last-child a:after{
+    display: none;
+}
+
+.navs ul li a.active:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50px;
+    top: 15px;
+}
+
+/*********Form Design**********/
+
+form label {
+    color: var(--label-color);
+    font-size: var(--label-size); 
+    font-weight: var(--font-weight-500);
+    display: block;
+}
+
+.form-field input, .form-field textarea, .form-field select {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: none;
+    font-size: var(--input-size-14);
+    padding: 12px 15px;
+     color: var(--placeholder-color);
+}
+
+
+.form-field select {
+    background-image: url(../images/dropdown.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px);
+    appearance: none;
+}
+
+
+.form-field input[type="submit"], .load-btn {
+    background-color: var(--button-color);
+    color: var(--white-color);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: .2s all ease;
+        border-radius: 5px;
+}
+
+.form-field input[type="submit"]:hover, .load-btn:hover {
+    background-color: var(--black-color);
+     color: var(--white-color);
+}
+
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+    outline: 0px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+
+.form-field input::placeholder, .form-field textarea::placeholder, .form-field select::placeholder{
+    color: var(--placeholder-color);
+}
+
+.main-width {
+    max-width: 600px;
+    margin: auto;
+}
+
+p.alredy-sign {
+    text-align: center;
+    font-size: var(--label-size);
+    color: var(--small-tag-color);
+}
+
+p.alredy-sign a {
+     color: var(--small-tag-color);
+}
+
+p.alredy-sign a:hover {
+    color: var(--black-color);
+}
+
+
+
+.fileUpload {
+   border: 1px solid var(--border-color);
+    border-radius: 8px;
+    height: 147px;
+    background-image: url(../images/lpus.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fileUpload input.upload {
+   opacity: 0;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.upload-picture {
+    margin-top: 32px;
+    text-align: center;
+    position: relative;
+}
+
+.upload-picture label{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px;
+}
+
+form input[type="checkbox"] {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.formcheck label {
+    position: relative;
+    cursor: pointer;
+    color: var(--placeholder-color);
+}
+
+
+.formcheck label:before {
+        content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #000;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 5%), inset 0px -15px 10px -12px rgb(0 0 0 / 5%);
+    padding: 4px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.formcheck input:checked + label:after {
+   content: '';
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 4px;
+    width: 2px;
+    height: 5px;
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}
+
+.formcheck {
+    margin-top: 5px;
+}
+
+.forgetpwd {
+    float: right;
+    position: absolute;
+    right: 0px;
+    bottom: 8px;
+}
+
+
+.wd70 {
+    width: calc(80% - 20px);
+    float: left;
+    margin-right: 20px;
+}
+
+
+.wd30 {
+    width: 20%;
+    float: left;
+}
+
+/**************Product listing***************/
+
+.product-list {
+    position: relative;
+    border-bottom: 3px solid #d7d7d7;
+    padding-bottom: 40px;
+    padding: 40px 0px;
+}
+
+.product-list:nth-child(2) {
+    padding-top: 0px;
+}
+
+.product-list li, .product-list p {
+    color: #999999;
+    font-size: 16px;
+}
+
+.product-list li img {
+    margin-right: 10px;
+}
+
+.product-list li strong {
+    width: 125px;
+    display: inline-block;
+}
+
+.product-list li {
+    padding-bottom: 10px;
+}
+
+
+
+.product-list p {
+    padding: 0px 150px 0px 23px;
+}
+
+.property-img {
+    height: 250px;
+    position: absolute;
+    right: 0px;
+    top: 41px;
+}
+
+.load-btn {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.search-form .form-field {
+    margin: 0px 9px 20px 9px;
+    width: calc(100% - 18px);
+}
+
+.search-form .width50 {
+    width: calc(50% - 18px);
+    margin: 0px 9px 20px 9px;
+    float: left;
+}
+
+form.search-form {
+    margin: 0px -9px;
+}
+
+.mobile-icon {
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+
+
+a.mobile-icon:hover {
+    color: #fff; 
+}

@@ -1,0 +1,100 @@
+@media only screen and (max-width: 991px) {
+    
+    .navs ul li a {
+        padding: 20px;
+    } 
+}
+
+
+@media only screen and (max-width: 767px) {  
+    h1 {
+        font-size: 35px;
+    }
+    
+    .navs ul li {
+        display: block;
+    }
+    
+    .navs ul li a {
+    padding: 10px 10px;
+}
+    
+    .navs ul li a:after {
+        display: none;
+    }
+    
+    .navs ul li a.active:before {
+        top: 2px;
+    }
+    
+    .paddnig80 {
+    padding: 40px 0px;
+}
+    
+    .wd70 {
+        width: 100%;
+    }
+    
+    .wd30 {
+       width: 100%;
+       margin-bottom: 25px;
+}
+    .upload-picture {
+       margin-top: 0px;     
+    }
+    
+    .upload-picture label {
+    position: relative;
+    top: 0px;
+    margin: 10px 0px 0px 0px;
+}
+    
+    .property-img {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    margin: 0px auto 25px auto;
+    display: block;
+}
+    
+    .product-list p {
+    padding: 0px 0px 0px 23px;
+}
+    
+    .navs {
+    padding: 15px 0px;
+}
+    
+    form.search-form {
+    margin: 0;
+}
+    
+    .search-form .width50, .search-form .form-field {
+      margin: 0px 0px 20px 0px;
+        width: 100%;
+    }
+    
+      .mobile-icon {
+        display: block;
+    }
+    
+    .navs ul {
+    position: absolute;
+    z-index: 99;
+    background: #000;
+    width: 100%;
+    left: 0;
+    top: 67px;
+    text-align: left;
+    padding: 20px 15px;
+        display: none;
+}
+    
+    
+    .navs ul li a.active:before {
+        display: none;
+    }
+    
+    
+    
+}

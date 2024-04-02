@@ -1,0 +1,83 @@
+/* --------------------- Global Fonts Styles ---------------------*/
+:root {
+    --mr-roboto-family: 'Barlow', sans-serif;
+
+  
+    --heading-h1-font-size: 55px;
+    --heading-h1-line-height: 65px;
+    
+    
+     --heading-h2-font-size: 35px;
+    --heading-h2-line-height: 45px;
+    
+     --white-color: #fff;
+     --black-color: #000;
+     --label-color: #999999;
+    --border-color: #d7d7d7;
+    --placeholder-color: #afafaf;
+    --small-tag-color: #afafaf;
+    --button-color: #343434;
+
+    
+     --font-size-18: 18px;
+    --label-size: 16px;
+    --input-size-14: 14px;
+    
+     --font-weight-600: 600;
+    --font-weight-500: 500;
+    
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li{
+    padding: 0px;
+    margin: 0px;
+     font-family: var(--mr-roboto-family)
+}
+
+ul,
+ul li{
+    list-style-type: none;
+}
+
+a {
+    font-size: var(--label-size);
+}
+
+a, 
+a:hover{
+    text-decoration: none;
+    color: #000;
+    transition: .2s all ease;
+    color: var(--small-tag-color);
+}
+
+a:hover {
+    color: var(--black-color);
+}
+
+
+h1 {
+      font-size: var(--heading-h1-font-size);
+      color: var(--white-color);
+      line-height: var(--heading-h1-line-height);
+      font-weight: var(--font-weight-600);
+ 
+}
+
+h2 {
+      font-size: var(--heading-h2-font-size);
+      line-height: var(--heading-h2-line-height);
+      font-weight: var(--font-weight-600);
+       margin-bottom: 30px;
+}
+
+
